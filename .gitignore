@@ -33,6 +33,8 @@ dist/
 build/
 coverage/
 out/
+.next/
+tsconfig.tsbuildinfo
 tmp/
 temp/
 

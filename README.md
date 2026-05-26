@@ -1,6 +1,13 @@
-# AI Team Workspace
+# WebAI Workspace
 
-This workspace scaffolds a daily AI delivery team for programming work in Cursor.
+This workspace combines a daily AI delivery team setup with a real Next.js application scaffold for programming work in Cursor.
+
+## App Stack
+
+- Next.js App Router
+- TypeScript
+- npm
+- Docker-ready production build
 
 ## Included Roles
 
@@ -48,3 +55,18 @@ This workspace scaffolds a daily AI delivery team for programming work in Cursor
 
 - `docs/github-workflow.md`: branch and PR process
 - `docs/github-setup.md`: connect this local repo to GitHub
+- `CONTRIBUTING.md`: contribution and PR expectations
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## CI Checks
+
+- Lint
+- Typecheck
+- Next.js production build
+- Docker image build validation

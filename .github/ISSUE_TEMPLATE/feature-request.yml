@@ -1,0 +1,68 @@
+name: Feature request
+description: Propose a new feature with business goal, scope, and acceptance criteria
+title: "[feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: business-goal
+    attributes:
+      label: Business goal
+      description: What problem are we solving and why now?
+      placeholder: Reduce manual status tracking by giving the team a single release dashboard.
+    validations:
+      required: true
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User story
+      description: Write the request in user story format.
+      placeholder: |
+        As a team lead
+        I want a dashboard that shows release status
+        So that I can understand blockers quickly
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Separate in-scope and out-of-scope work.
+      placeholder: |
+        In scope:
+        - Dashboard summary cards
+        - Release status list
+
+        Out of scope:
+        - Historical analytics
+        - Slack notifications
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: List behavior that must be true when the work is done.
+      placeholder: |
+        - [ ] Dashboard loads in under 2 seconds for 50 projects
+        - [ ] Users can filter by environment
+        - [ ] Errors show a clear retry state
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies or constraints
+      description: Mention APIs, teams, approvals, or technical constraints.
+      placeholder: Depends on release metadata API and product approval for status labels.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - p0
+        - p1
+        - p2
+        - p3
+    validations:
+      required: true

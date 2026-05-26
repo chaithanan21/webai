@@ -1,0 +1,51 @@
+name: Delivery task
+description: Track a scoped engineering task connected to an issue, PR, or release
+title: "[task] "
+labels:
+  - task
+body:
+  - type: input
+    id: parent-link
+    attributes:
+      label: Parent issue or PR
+      description: Link the related feature, bug, or PR if it exists.
+      placeholder: https://github.com/chaithanan21/webai/issues/12
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should be delivered?
+      placeholder: Add a health endpoint and wire it into CI smoke checks.
+    validations:
+      required: true
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of done
+      placeholder: |
+        - [ ] Endpoint returns 200
+        - [ ] Response is documented
+        - [ ] CI checks pass
+    validations:
+      required: true
+  - type: textarea
+    id: test-plan
+    attributes:
+      label: Test plan
+      placeholder: Describe how this task will be verified locally and in CI.
+    validations:
+      required: true
+  - type: dropdown
+    id: owner-role
+    attributes:
+      label: Primary owner role
+      options:
+        - business-analyst
+        - solution-architect
+        - backend-developer
+        - api-developer
+        - frontend-developer
+        - qa-engineer
+        - github-devops
+    validations:
+      required: true
