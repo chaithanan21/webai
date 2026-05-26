@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Team planning in Cursor
+    url: https://github.com
+    about: Use the BA and SA agents first when a request is still unclear.

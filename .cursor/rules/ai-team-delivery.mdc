@@ -1,0 +1,13 @@
+---
+description: Role-based AI delivery workflow with Git and GitHub discipline
+alwaysApply: true
+---
+
+# AI Team Delivery Workflow
+
+- Use `meeting-explorer` or `ai-team-orchestrator` before large changes.
+- Define acceptance criteria before implementation when requirements are vague.
+- Keep work in small, reviewable slices.
+- Prefer feature branches and pull requests over direct changes to `main`.
+- Run QA reasoning before claiming merge readiness.
+- Call out blockers, assumptions, and missing GitHub information explicitly.
